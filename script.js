@@ -1,5 +1,7 @@
 //your JS code here. If required.
 const container = document.querySelector(".code-container")
+const inputs = container.querySelectorAll(".code");
+inputs[0].focus();
         container.addEventListener("input", (e) => {
             const ele = e.target
             if (ele.value.length == 1) {
@@ -7,7 +9,6 @@ const container = document.querySelector(".code-container")
             }
 
         })
-        const inputs = container.querySelectorAll(".code");
 
         inputs.forEach((input, index) => {
             input.addEventListener("keydown", (e) => {
