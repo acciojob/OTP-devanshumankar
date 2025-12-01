@@ -5,7 +5,9 @@ inputs[0].focus();
         container.addEventListener("input", (e) => {
             const ele = e.target
             if (ele.value.length == 1) {
-                ele.nextElementSibling.focus()
+				if(ele.nextElementSibling){
+	                ele.nextElementSibling.focus()
+				}
             }
 
         })
